@@ -1,0 +1,52 @@
+{
+  "name": "random-number-generator-frontend",
+  "version": "0.0.6",
+  "description": "Random number generator - frontend",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "build": "eslint && webpack --mode=production",
+    "start-local": "webpack-dev-server --mode development",
+    "start": "NODE_ENV=production node ./dist/server.js",
+    "eslint": "eslint --fix \"src/**/*.js\"",
+    "test": "jest",
+    "webpack": "webpack"
+  },
+  "author": "michal vodicka",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.1",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0",
+    "semantic-ui-react": "^0.87.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "concurrently": "^5.1.0",
+    "css-loader": "^3.4.2",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "fetch-mock": "^9.0.0-beta.2",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^25.1.0",
+    "node-fetch": "^2.6.0",
+    "node-sass": "^4.13.1",
+    "nodemon": "^1.19.1",
+    "redux-mock-store": "^1.5.4",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.10.3"
+  }
+}

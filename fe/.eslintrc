@@ -1,0 +1,34 @@
+{
+  "parser": "babel-eslint",
+  "extends": "react",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "indent": [
+      "error",
+      2
+    ],
+    "max-len": [
+      2,
+      680,
+      4,
+      "ignoreComments": true
+    ],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "never",
+        "named": "never",
+        "asyncArrow": "never"
+      }
+    ]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
