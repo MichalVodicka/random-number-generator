@@ -8,7 +8,7 @@ in root folder run command
 
 `npm install`
 
-First command install concurrently into root folder as helper for running BE and FE in one command. And install node modules for BE and FE
+The command install concurrently into root folder as helper for running BE and FE in one command. And install node modules for BE and FE
 
 How to config (for development)
 ---
