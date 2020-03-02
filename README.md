@@ -4,26 +4,26 @@ The project is separated into two nodejs apps(backend -> folder be and frontend 
 
 How to install
 ---
-in root folder run command 
+in the root folder run a command 
 
 `npm install`
 
-The command install concurrently into root folder as helper for running BE and FE in one command. And install node modules for BE and FE
+The command install concurrently BE and FE in subfolders. 
 
-How to config (for development)
+How to config (for development purpose)
 ---
-in each folder (be and fe) is `.env` file where configuration (ports) is. In production the app is configured through environment variables
+in each folder (be and fe) is `.env` file in which you can configure ports. In the production environment the application should be configured by environment variables.
 
 How to start
 ---
-in root folder run command 
+in the root folder run a command 
 
 `npm run start`
 
 
 How to test
 --
-to run test you have to run them in each folder e.g.
+test scripts are seperated for FE and BE. You have to run test in each folder e.g.
 
 __backend - unit test__
 
