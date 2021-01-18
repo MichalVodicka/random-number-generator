@@ -1,20 +1,23 @@
 {
-  "name": "random-number-generator-umbrella-script",
+  "name": "random-number-generator",
   "version": "0.0.1",
-  "description": "Random number generator - umbrella script",
+  "description": "Random number generator",
   "main": "",
   "private": true,
   "scripts": {
     "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
-    "start-backend": "cd be && npm run start-local",
-    "start-frontend": "cd fe && npm run start-local",
+    "start-backend": "cd packages/be && npm run start-local",
+    "start-frontend": "cd packages/fe && npm run start-local",
     "install": "npm run install-backend && npm run install-frontend ",
-    "install-backend": "cd be && npm install",
-    "install-frontend": "cd fe && npm install"
+    "install-backend": "cd packages/be && npm install",
+    "install-frontend": "cd packages/fe && npm install"
   },
   "author": "Michal Vodicka",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^5.1.0"
+  },
+  "dependencies": {
+    "lerna": "^3.22.1"
   }
 }

@@ -1,0 +1,37 @@
+{
+  "name": "random-number-generator-backend",
+  "version": "0.0.1",
+  "description": "Random number generator - backend",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "NODE_ENV=production node ./dist/index.js",
+    "test": "jest",
+    "lint": "eslint --fix ./src/**/*.js",
+    "build": "webpack --mode=production",
+    "start-local": "nodemon -r dotenv/config src/index.js"
+  },
+  "author": "michal vodicka",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "helmet": "^3.15.0",
+    "hpp": "^0.2.2",
+    "validator": "^11.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@types/express": "^4.17.11",
+    "@types/jest": "^26.0.20",
+    "babel-loader": "^8.0.6",
+    "dotenv": "^8.1.0",
+    "eslint": "^6.3.0",
+    "jest": "^25.1.0",
+    "nodemon": "^1.18.4",
+    "supertest": "^4.0.2",
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9"
+  }
+}
