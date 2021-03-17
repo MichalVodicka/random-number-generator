@@ -1,4 +1,4 @@
-const isEmpty = (value) =>
+const isEmpty = (value:undefined|null|{any}|string):boolean =>
         value === undefined ||
         value === null ||
         (typeof value === 'object' && Object.keys(value).length ===0) ||

@@ -1,13 +1,13 @@
-const validator = require('validator');
-const isEmpty = require('./is-empty');
+import validator from  'validator';
+import isEmpty from './is-empty';
 
 interface generatorErrorMsg{
   max?:string;
   min?:string;
 }
 
-export default function validateGeneratorInput(data) {
-  let errors:generatorErrorMsg = {};
+export default function validateGeneratorInput(data:{[i:string]:number|string}):{errors:generatorErrorMsg,isValid:boolean} {
+  const errors:generatorErrorMsg = {};
   data.min = !isEmpty(data.min) ? data.min : "";
   data.max = !isEmpty(data.max) ? data.max : "";
 
@@ -46,4 +46,4 @@ export default function validateGeneratorInput(data) {
     errors,
     isValid: isEmpty(errors),
   };
-};
+}
