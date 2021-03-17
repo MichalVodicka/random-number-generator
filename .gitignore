@@ -1,4 +1,4 @@
 .idea
 node-modules/
-be/node-modules/
-fe/node-modules/
+packages/be/node-modules/
+packages/fe/node-modules/
