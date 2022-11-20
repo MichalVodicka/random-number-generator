@@ -31,7 +31,7 @@
     "dotenv": "^8.1.0",
     "eslint": "^6.3.0",
     "jest": "^25.1.0",
-    "nodemon": "^1.18.4",
+    "nodemon": "^2.0.0",
     "supertest": "^4.0.2",
     "webpack": "^5.26.3",
     "webpack-cli": "^4.5.0"
