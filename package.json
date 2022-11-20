@@ -18,6 +18,6 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
-    "lerna": "^3.22.1"
+    "lerna": "^5.0.0"
   }
 }
